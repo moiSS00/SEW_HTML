@@ -1,0 +1,48 @@
+/*Especificidad = 001*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Especificidad = 001*/
+header{
+    align-items: center;
+    justify-content: center;
+    order: 1;
+}
+
+/*Especificidad = 001*/
+nav{
+    order: 2;
+}
+
+/*Especificidad = 002*/
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Especificidad = 001*/
+section,main{
+    order: 3;
+}
+
+/*Especificidad = 001*/
+footer{
+    order: 4;
+}
+
+/*Especificidad = 001*/
+video,img{
+    display: block;
+}
+
+
+
+
+
+
+
